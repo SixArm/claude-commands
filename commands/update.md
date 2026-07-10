@@ -1,7 +1,6 @@
 # Update
 
 - update, upgrade, harmonize, audit, fix.
-- update all files spec.md spec-driven development single source of truth.
-- update all files AGENTS.md, AGENTS/*; optimize each file < 40k bytes.
-- update all files index.md, comprehensive documentation and examples.
-  
+- update files spec/\* specification-driven development for single source of truth.
+- update files CLAUDE.md, AGENTS.md, AGENTS/\*, and optimize each file < 40k bytes.
+- update files index.md, comprehensive documentation, any examples, any tutorials.
