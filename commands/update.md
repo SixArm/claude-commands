@@ -1,6 +1,8 @@
 # Update
 
 - update, upgrade, harmonize, annotate, audit, fix.
+- update any dependencies, any versions, any manifests.
+- update any github dependabot issues then close them on github.
 - update any files spec/\* specification-driven development for single source of truth.
 - update any files CLAUDE.md, AGENTS.md, AGENTS/\*, and optimize each file < 40k bytes.
 - update any files README.md, index.md, comprehensive documentation, examples, tutorials.
