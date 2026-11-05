@@ -11,3 +11,4 @@
 - update any AI agent skills folders for AI use: *-skill folder.
 - update any folder *.github.io with GitHub Pages, SvelteKit, Lily Design System.
 - update accuracy and specificity of any plans, any tasks, any files, any agent files.
+- update any stalled work, such as deleting: temp files, orphan shells, zombie processes.
