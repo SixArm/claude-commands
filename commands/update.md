@@ -3,13 +3,23 @@
 - update, upgrade, harmonize, annotate, audit, fix.
 - update any dependencies, any versions, any manifests.
 - update any github dependabot notifications, then close each one on github.
-- update any files spec/\* specification-driven development for single source of truth.
-- update any files CLAUDE.md, AGENTS.md, AGENTS/\*, and optimize each file < 40k bytes.
-- update any files README.md, index.md, comprehensive documentation, examples, tutorials.
-- update any file Cargo.toml to Rust MSRV N-2 then update any new Rust syntax.
-- update any file Cargo.toml "chrono" crate: migrate from "chrono" to "jiff", then update code.
-- update any AI agent LLM files for AI use: llms.json and llms.txt.
-- update any AI agent skills folders for AI use: *-skill folder.
-- update any folder *.github.io with GitHub Pages, SvelteKit, Lily Design System.
+- update any files `spec/*` specification-driven development for single source of truth.
+- update any files `CLAUDE.md`, `AGENTS.md`, `AGENTS/*`, and optimize each file < 40k bytes.
+- update any files `README.md`, `index.md`, comprehensive documentation, examples, tutorials.
+- update any Rust project:
+  - update file `rust-toolchain.toml` toolchain pin to Rust current version; commit it.
+  - update Cargo.toml to Rust MSRV N-2 then update any new Rust MSRV N-2 syntax; commit it.
+  - fix any Cargo.toml "chrono" crate: migrate from "chrono" to "jiff" then update code; commit it.
+  - ensure Cargo.toml uses `[profile.dev]` `debug = "line-tables-only"`
+  - ensure Cargo.toml uses `[profile.dev]` `split-debuginfo = "unpacked"`
+  - ensure Cargo.toml uses `[profile.dev.package."*"]` `debug = false`
+  - ensure Cargo.toml uses `[profile.mutants]` `inherits = "test"` `debug = "none"` `incremental = false`
+  - ensure the file `Makefile` defines `make ci-minimum-supported-rust-version` calls `bin/make-ci-minimum-supported-rust-version`
+  - ensure the file `bin/make-ci-minimum-supported-rust-version` exists and tests Rust N-2 and N-1.
+  - run `cargo sweep --recursive --installed`
+  - run `cargo sweep --recursive --time 14`
+- update any AI agent LLM files for AI use: `llms.json` and `llms.txt`.
+- update any AI agent skills folders for AI use: `*-skill` folder.
+- update any folder `*.github.io` with GitHub Pages, SvelteKit, Lily Design System.
 - update accuracy and specificity of any plans, any tasks, any files, any agent files.
 - update any expirations: old temp files, orphan shells, zombie processes, stale containers.
